@@ -54,7 +54,7 @@ describe('example to-do app', () => {
     cy.get('.todo-list li')
       .should('have.length', 3)
       .last()
-      .should('have.text', 'Walk the dog')
+      .should('have.text', newItem)
     //I altered here to test ci.yml artifact config
   })
 
