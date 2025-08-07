@@ -54,7 +54,8 @@ describe('example to-do app', () => {
     cy.get('.todo-list li')
       .should('have.length', 3)
       .last()
-      .should('have.text', 'Feed the cat');
+      .should('have.text', 'Walk the dog')
+    //I altered here to test ci.yml artifact config
   })
 
   it('can check off an item as completed', () => {
